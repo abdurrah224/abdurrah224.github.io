@@ -17,3 +17,9 @@ header h2 {
     color:rgb(243, 155, 83);
     text-indent: 30px;
 }
+header img {
+    float: left;
+}
+main {
+    clear: left;
+}
