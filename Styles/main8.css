@@ -3,3 +3,17 @@ body {
     font-size:100%;
     margin-left: 10px;
 }
+a:hover, a:focus {
+    font-style:italic;
+    color:darkseagreen;
+}
+header h1 {
+    FONT-SIZE: 175%;
+    color:deepskyblue;
+    text-indent: 30px;
+}
+header h2 {
+    FONT-SIZE: 135%;
+    color:rgb(243, 155, 83);
+    text-indent: 30px;
+}
