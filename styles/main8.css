@@ -1,7 +1,13 @@
+html{
+    background-image:  linear-gradient(to bottom, white 0%, #facd8a 100%)
+}
+
 body {
     font-family:Arial, Helvetica, sans-serif;
     font-size:100%;
-    margin-left: 10px;
+    width: 1000px;
+    background-color:lightblue;
+    margin: 15px auto;
 }
 a:hover, a:focus {
     font-style:italic;
@@ -9,7 +15,7 @@ a:hover, a:focus {
 }
 header h1 {
     FONT-SIZE: 175%;
-    color:deepskyblue;
+    color:rgb(101, 77, 158);
     text-indent: 30px;
 }
 header h2 {
