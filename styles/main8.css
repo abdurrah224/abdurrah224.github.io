@@ -49,11 +49,7 @@ main h3 {
     padding: 1em;
 }
 main nav {
-<<<<<<< HEAD
     margin: 1.5em 2em 1.5em;
-=======
-    margin: 1.5em 2em 1.5em;
->>>>>>> f2b25aa33902e6a50bfc656bad06f46978067749
     border: 5px dashed blue;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px gainsboro;
