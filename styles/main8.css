@@ -53,7 +53,7 @@ main nav {
     border: 5px dashed blue;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px gainsboro;
-    padding: 0.5em;
+    padding: 1em;
 }
 main div.contact {
     margin:1.5em 2em 0 2em;
