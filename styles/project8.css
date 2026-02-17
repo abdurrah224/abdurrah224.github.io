@@ -1,0 +1,45 @@
+html{
+    background-image:  linear-gradient(to left, white 0%, #8cdfd1 100%)
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:100%;
+    width: 90%;
+    background-color:lightblue;
+    margin: 15px auto;
+    padding: 15px 1.5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
+    background: url(/images/) right repeat-y;
+    background-attachment: fixed;
+    background-color: white;
+
+}
+a:hover, a:focus {
+    font-style:italic;
+    color:darkseagreen;
+    border: 3px blue;
+    border-style: dotted solid;
+}
+header{
+    margin-bottom: 3em;
+}
+header h1 {
+    FONT-SIZE: 175%;
+    color:rgb(101, 77, 158);
+    text-indent: 30px;
+}
+header h2 {
+    FONT-SIZE: 135%;
+    color:rgb(243, 155, 83);
+    text-indent: 30px;
+}
+header img {
+    float: left;
+    margin-left: 2em;
+}
+.shadow {
+    text-shadow: 2px 2px 2px rgb(128, 0, 0);
+}
