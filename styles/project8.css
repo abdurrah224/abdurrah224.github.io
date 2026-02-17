@@ -71,3 +71,7 @@ aside {
     float: right;
     background-color: #ffebc6;
 }
+footer {
+    clear: both;
+    border-top: 2px solid maroon;
+}
