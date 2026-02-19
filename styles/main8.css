@@ -13,6 +13,7 @@ body {
     border-radius: 25px;
     box-shadow: 5px 5px 0 0;
     background-image: url("/images/backgroundimg.JPG");
+    background-size: contain;
     background-position: right top;
     background-repeat: repeat-y;
     background-attachment: fixed;
