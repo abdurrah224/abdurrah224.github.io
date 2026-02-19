@@ -12,7 +12,7 @@ body {
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 5px 5px 0 0;
-    background-image: url(/images/) right repeat-y;
+    background-image: url("images/backgroundimg.JPG") right repeat-y;
     background-position: right top;
     background-repeat: repeat-y;
     background-attachment: fixed;
