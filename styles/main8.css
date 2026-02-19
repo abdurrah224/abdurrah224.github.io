@@ -12,7 +12,9 @@ body {
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 5px 5px 0 0;
-    background: url(/images/) right repeat-y;
+    background-image: url(/images/) right repeat-y;
+    background-position: right top;
+    background-repeat: repeat-y;
     background-attachment: fixed;
     background-color: white;
 
@@ -45,8 +47,8 @@ main {
     clear: left;
 }
 main h3 {
-    margin:1.5em 2em 1.5em;
-    border: 5px dashed moccasin;
+    margin: 3em 2em 1.5em;
+    border: 5px double moccasin;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px pink;
     padding: 1em;
@@ -56,7 +58,7 @@ main nav {
     border: 5px dashed moccasin;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px pink;
-    padding: 1em;
+    padding: 0.5em;
 }
 main div.contact {
     margin:1.5em 2em 0 2em;
