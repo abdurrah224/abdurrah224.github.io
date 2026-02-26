@@ -12,7 +12,9 @@ body {
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 5px 5px 0 0;
-    background: url(/sampic.jpg/) right repeat-y;
+    background: url("../imagees/sampic.jpg");
+    background-position: 97%;
+    background-repeat: repeat-y;
     background-attachment: fixed;
     background-color: white;
 
