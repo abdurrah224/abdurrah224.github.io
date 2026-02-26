@@ -75,7 +75,7 @@ aside {
 p.fixed {
     width: auto;
     position: fixed;
-    bottom: 20px;
+    bottom: 100px;
     right: 20px;
     background-color: lightgreen;
     border: 2px solid darkgreen;
