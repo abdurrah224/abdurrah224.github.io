@@ -3,10 +3,12 @@ body {
     margin: 15px auto;
     font-family: Arial, sans-serif;
     border: 2px solid black;
-    background-image: url("https://backgroundimg.JPG");
+    background-image: url("backgroundimg.JPG");
     background-attachment: fixed;
     background-size: cover;
-    overflow:auto;
+}
+nav {
+    border-bottom: 2px solid black;
 }
 
 nav ul {
@@ -23,58 +25,36 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 article {
     width: 75%;
     float: left;
     padding: 15px;
     border-right: 2px solid black;
+    box-sizing: border-box;
 }
-
 aside {
     width: 20%;
     float: right;
     position: fixed;
-    right: 2%;
+    right: 3%;
     top: 100px;
 }
-
-aside ul {
-    list-style: none;
-    padding: 0;
-}
-
-aside li {
-    margin: 10px 0;
-}
-
-aside a {
-    text-decoration: none;
-    color: black;
-}
-
 .dropcap::first-letter {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     font-style: italic;
+    float: left;
+    margin-right: 8px;
+    line-height: 1;
 }
-
 .float-img {
     float: left;
-    margin: 10px;
+    margin: 15px;
+    width: 200px;
+    border: 1px solid black;
 }
-
 footer {
     clear: both;
     text-align: center;
-    padding: 10px;
-    border-top: 2px solid black;
-}
-
-hr {
-    border: 1px solid black;
+    padding: 20px;
 }
