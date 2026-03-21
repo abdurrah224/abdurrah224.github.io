@@ -1,17 +1,20 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* 6. BODY */
+body {
+    width: 95%;
+    margin: 15px auto;
     font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+
+    /* 7. BACKGROUND IMAGE (fixed) */
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    background-attachment: fixed;
 }
 
 /* NAV BAR */
 nav {
-    display: flex;
-    justify-content: center;
     background: linear-gradient(to right, #3a00ff, #6a00ff);
-    border-bottom: 3px solid #4b00cc;
+    text-align: center;
+    border-bottom: 3px solid blue;
 }
 
 nav a {
@@ -20,7 +23,7 @@ nav a {
     padding: 15px 40px;
     display: inline-block;
     font-weight: bold;
-    border-right: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid rgba(255,255,255,0.3);
 }
 
 nav a:last-child {
@@ -28,98 +31,103 @@ nav a:last-child {
 }
 
 nav a:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.2);
 }
 
-/* PAGE CONTAINER */
-body {
-    background: #e6f0f5;
+/* LINE BELOW NAV (Requirement 10) */
+nav {
+    margin-bottom: 10px;
 }
 
-/* MAIN CONTENT LAYOUT */
-main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* ARTICLE (LEFT SIDE) */
+/* 8. ARTICLE */
 article {
-    background: white;
+    width: 75%;
+    float: left;
     padding: 20px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-/* BIG FADED BACKGROUND LETTER */
-article::after {
-    content: "B";
-    position: absolute;
-    font-size: 400px;
-    color: orange;
-    opacity: 0.15;
-    right: 0;
-    top: 50px;
-    z-index: 0;
+    border-right: 3px solid blue;
 }
 
 /* HEADINGS */
 h1 {
     color: #3a00ff;
-    margin-bottom: 10px;
 }
 
 h2 {
     color: #3a00ff;
-    margin-bottom: 15px;
+    margin-top: 20px;
 }
 
-/* INTRO IMAGE */
+/* PARAGRAPH DROP CAP */
+article p::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* IMAGE WRAP (Requirement 3) */
 article img {
     float: left;
     margin: 10px 15px 10px 0;
-    width: 120px;
+    width: 150px;
 }
 
-/* DROP CAP (big first letter) */
-article p::first-letter {
-    font-size: 60px;
-    font-weight: bold;
-    float: left;
-    margin-right: 10px;
-    line-height: 1;
-}
-
-/* MULTI-COLUMN TEXT */
-article section {
+/* MULTI-COLUMN TEXT (matches screenshot style) */
+section {
     column-count: 3;
-    column-gap: 30px;
-    column-rule: 3px dashed #3a00ff;
+    column-gap: 25px;
+    column-rule: 2px dashed blue;
 }
 
-/* RIGHT SIDEBAR */
+/* 8 + 9. ASIDE */
 aside {
-    background: #bcd3df;
-    padding: 20px;
-    border: 2px solid #5a5aff;
-    border-radius: 5px;
-    height: fit-content;
+    width: 20%;
+    float: right;
+
+    /* 9. FIXED SIDEBAR */
+    position: fixed;
+    right: 3%;
+    top: 120px;
+
+    background-color: #cfe3ec;
+    padding: 15px;
+    border: 2px solid blue;
 }
 
-/* SIDEBAR LINKS */
+/* SIDEBAR LIST STYLE */
 aside ul {
-    list-style-type: disc;
+    list-style-type: square;
     margin-left: 20px;
 }
 
+aside ul ul {
+    list-style-type: circle;
+}
+
+/* LINKS */
 aside a {
     color: blue;
     text-decoration: underline;
 }
 
-/* RETURN LINK */
+/* RETURN LINK SPACING */
 aside p {
+    margin-top: 15px;
+}
+
+/* CLEAR FLOAT BEFORE FOOTER */
+footer {
+    clear: both;
+
+    /* 10. LINE ABOVE FOOTER */
+    border-top: 3px solid blue;
+
+    text-align: center;
+    padding: 15px;
     margin-top: 20px;
+}
+
+/* FOOTER LINK */
+footer a {
+    color: blue;
+    text-decoration: underline;
 }
