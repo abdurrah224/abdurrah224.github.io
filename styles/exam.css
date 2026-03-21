@@ -1,133 +1,91 @@
-/* 6. BODY */
+html{
+    background-image:  linear-gradient(to left, white 0%, #8cdfd1 100%)
+}
+
 body {
-    width: 95%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:100%;
+    width: 90%;
+    background-color:lightblue;
     margin: 15px auto;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid black;
-
-    /* 7. BACKGROUND IMAGE (fixed) */
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    padding: 15px 1.5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
+    background-image: url("/images/sampic.jpg");
+    background-position: 50%;
+    background-repeat: repeat-y;
     background-attachment: fixed;
-}
+    background-color: white;
 
-/* NAV BAR */
-nav {
-    background: linear-gradient(to right, #3a00ff, #6a00ff);
-    text-align: center;
-    border-bottom: 3px solid blue;
 }
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    font-weight: bold;
-    border-right: 1px solid rgba(255,255,255,0.3);
+a:hover, a:focus {
+    font-style:italic;
+    color:darkseagreen;
+    border: 3px blue;
+    border-style: dotted solid;
 }
-
-nav a:last-child {
-    border-right: none;
+header{
+    margin-bottom: 3em;
+    border-bottom: 2px solid black;
 }
-
-nav a:hover {
-    background-color: rgba(255,255,255,0.2);
+header h1 {
+    FONT-SIZE: 175%;
+    color:rgb(101, 77, 158);
+    text-indent: 30px;
 }
-
-/* LINE BELOW NAV (Requirement 10) */
-nav {
-    margin-bottom: 10px;
+header h2 {
+    FONT-SIZE: 135%;
+    color:rgb(243, 155, 83);
+    text-indent: 30px;
 }
-
-/* 8. ARTICLE */
-article {
-    width: 75%;
+header img {
     float: left;
-    padding: 20px;
-    border-right: 3px solid blue;
+    margin-left: 2em;
 }
-
-/* HEADINGS */
-h1 {
-    color: #3a00ff;
+.shadow {
+    text-shadow: 2px 2px 2px rgb(128, 0, 0);
 }
-
-h2 {
-    color: #3a00ff;
-    margin-top: 20px;
+article {
+    clear:left;
+    width: 70%;
+    float: left;
+    column-count: 2;
+    column-rule: 2px dotted maroon;
+    column-gap: 2em;
+    margin-left: 2em;
 }
-
-/* PARAGRAPH DROP CAP */
-article p::first-letter {
-    font-size: 50px;
-    font-weight: bold;
-    font-style: italic;
+article h3 {
+    column-span: all;
 }
-
-/* IMAGE WRAP (Requirement 3) */
 article img {
     float: left;
-    margin: 10px 15px 10px 0;
-    width: 150px;
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
-
-/* MULTI-COLUMN TEXT (matches screenshot style) */
-section {
-    column-count: 3;
-    column-gap: 25px;
-    column-rule: 2px dashed blue;
+article p::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    color: lightgreen;
 }
-
-/* 8 + 9. ASIDE */
 aside {
     width: 20%;
     float: right;
-
-    /* 9. FIXED SIDEBAR */
+    background-color: #ffebc6;
+    padding: 1em;
+}
+p.fixed {
+    width: auto;
     position: fixed;
-    right: 3%;
-    top: 120px;
-
-    background-color: #cfe3ec;
-    padding: 15px;
-    border: 2px solid blue;
+    bottom: 135px;
+    right: 20px;
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+    padding: 10px 20px;
+    font-weight: bold;
 }
-
-/* SIDEBAR LIST STYLE */
-aside ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-aside ul ul {
-    list-style-type: circle;
-}
-
-/* LINKS */
-aside a {
-    color: blue;
-    text-decoration: underline;
-}
-
-/* RETURN LINK SPACING */
-aside p {
-    margin-top: 15px;
-}
-
-/* CLEAR FLOAT BEFORE FOOTER */
 footer {
     clear: both;
-
-    /* 10. LINE ABOVE FOOTER */
-    border-top: 3px solid blue;
-
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-/* FOOTER LINK */
-footer a {
-    color: blue;
-    text-decoration: underline;
+    border-top: 2px solid maroon;
 }
