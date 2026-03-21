@@ -1,88 +1,42 @@
-/* Requirement 6, 7 & 10 */
-body {
-    width: 95%;
-    margin: 15px auto;
-    font-family: Arial, sans-serif;
-    border: 2px solid black; /* Line around the body */
-    background-image: url("backgroundimg.JPG"); 
-    background-attachment: fixed; /* Requirement 7 */
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
-}
-
-/* Requirement 1 & 10 */
-nav {
-    background-color: #333;
-    border-bottom: 2px solid black; /* Line below the menu */
-}
-
+/* Update Nav Color */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     padding: 15px;
     margin: 0;
+    background-color: blue; /* Matches the target screenshot */
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+/* Fix the Image Wrap */
+.float-image {
+    float: left;
+    width: 150px; 
+    margin: 0 20px 10px 0; /* Creates space for text to wrap */
 }
 
-/* Requirement 8, 10 */
+/* Style the Sidebar as a Light Blue Box */
+aside {
+    width: 20%;
+    position: fixed;
+    top: 120px;
+    right: 3%;
+    background-color: #d1e7ff; /* Light blue box background */
+    border: 2px solid #00008b; /* Darker blue border */
+    padding: 15px;
+    box-sizing: border-box;
+}
+/* Custom List Markers for Aside */
+aside ul {
+    list-style-type: none; /* Manually control markers to match screenshot */
+    padding-left: 5px;
+}
+
+/* The Vertical Line between columns */
 article {
     width: 75%;
     float: left;
     padding: 20px;
-    border-right: 2px solid black; /* Line between columns */
+    border-right: 2px dashed blue; /* Vertical dashed line as shown */
     box-sizing: border-box;
-    min-height: 1000px; /* Ensures the page is long enough to scroll */
-}
-
-/* Requirement 8 & 9: Positioning the Fixed Sidebar */
-aside {
-    width: 20%;
-    position: fixed;
-    top: 100px;
-    right: 4%; /* Adjusted to sit within the 95% body width */
-    padding: 10px;
-}
-
-/* Requirement 9: Nested List Styles (Bullets & Indents) */
-aside ul {
-    list-style-type: disc; 
-    padding-left: 20px;
-}
-
-aside ul ul.sub-list {
-    list-style-type: circle;
-    padding-left: 20px;
-}
-
-/* Requirement 3a: Dropcap styling */
-.dropcap::first-letter {
-    font-size: 3.5em;
-    font-weight: bold;
-    font-style: italic;
-    float: left;
-    margin-right: 10px;
-    line-height: 0.8;
-}
-
-/* Requirement 3b: Image text wrapping */
-.float-image {
-    float: left;
-    width: 150px; /* Matches screenshot size better */
-    margin: 0 20px 10px 0;
-}
-
-/* Requirement 5 & 10 */
-footer {
-    clear: both;
-    text-align: center;
-    padding: 15px;
-    border-top: 2px solid black; /* Line above the footer */
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: makes text readable over bg */
 }
