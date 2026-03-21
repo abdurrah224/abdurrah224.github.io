@@ -1,42 +1,125 @@
-/* Update Nav Color */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
+/* RESET */
+* {
     margin: 0;
-    background-color: blue; /* Matches the target screenshot */
-}
-
-/* Fix the Image Wrap */
-.float-image {
-    float: left;
-    width: 150px; 
-    margin: 0 20px 10px 0; /* Creates space for text to wrap */
-}
-
-/* Style the Sidebar as a Light Blue Box */
-aside {
-    width: 20%;
-    position: fixed;
-    top: 120px;
-    right: 3%;
-    background-color: #d1e7ff; /* Light blue box background */
-    border: 2px solid #00008b; /* Darker blue border */
-    padding: 15px;
+    padding: 0;
     box-sizing: border-box;
-}
-/* Custom List Markers for Aside */
-aside ul {
-    list-style-type: none; /* Manually control markers to match screenshot */
-    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* The Vertical Line between columns */
-article {
-    width: 75%;
-    float: left;
+/* NAV BAR */
+nav {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #3a00ff, #6a00ff);
+    border-bottom: 3px solid #4b00cc;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    font-weight: bold;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+nav a:last-child {
+    border-right: none;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* PAGE CONTAINER */
+body {
+    background: #e6f0f5;
+}
+
+/* MAIN CONTENT LAYOUT */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
     padding: 20px;
-    border-right: 2px dashed blue; /* Vertical dashed line as shown */
-    box-sizing: border-box;
+}
+
+/* ARTICLE (LEFT SIDE) */
+article {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BIG FADED BACKGROUND LETTER */
+article::after {
+    content: "B";
+    position: absolute;
+    font-size: 400px;
+    color: orange;
+    opacity: 0.15;
+    right: 0;
+    top: 50px;
+    z-index: 0;
+}
+
+/* HEADINGS */
+h1 {
+    color: #3a00ff;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #3a00ff;
+    margin-bottom: 15px;
+}
+
+/* INTRO IMAGE */
+article img {
+    float: left;
+    margin: 10px 15px 10px 0;
+    width: 120px;
+}
+
+/* DROP CAP (big first letter) */
+article p::first-letter {
+    font-size: 60px;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+/* MULTI-COLUMN TEXT */
+article section {
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 3px dashed #3a00ff;
+}
+
+/* RIGHT SIDEBAR */
+aside {
+    background: #bcd3df;
+    padding: 20px;
+    border: 2px solid #5a5aff;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+/* SIDEBAR LINKS */
+aside ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+aside a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* RETURN LINK */
+aside p {
+    margin-top: 20px;
 }
