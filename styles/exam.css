@@ -6,6 +6,7 @@ body {
     background-image: url("https://backgroundimg.JPG");
     background-attachment: fixed;
     background-size: cover;
+    overflow:auto;
 }
 
 nav ul {
