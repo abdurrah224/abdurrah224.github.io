@@ -17,26 +17,31 @@ body {
     background-attachment: fixed;
     background-color: white;
 }
-nav {
-    text-align: center;
-    background: linear-gradient(to right, #8579be, #452a6b);
-    border-bottom: 3px solid blue;
+#nav_menu ul { 
+    list-style-type: none;
 }
-nav a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-weight: bold; 
-
-    padding: 15px 40px;
-
-    border-right: 2px solid rgba(255,255,255,0.4);
+#nav_menu ul li {
+    float: left;
 }
-nav a:last-child {
+#nav_menu ul li a {
+text-align: center;
+display: block;
+width: 175px;
+padding: 1em 0; 
+text-decoration: none;
+background-color: blue;
+color: white;
+font-weight: bold;
+border-right: 2px solid white;
+}
+#nav_menu ul li a.lastitem { 
     border-right: none;
 }
-nav a:hover {
-    background-color: rgba(255,255,255,0.2);
+#nav_menu ul li a.current { 
+    color: yellow;
+}
+#nav_menu {
+    overflow:auto;
 }
 a:hover, a:focus {
     font-style:italic;
