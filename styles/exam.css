@@ -47,6 +47,10 @@ border-right: 2px solid white;
 #nav_menu {
     overflow:auto;
 }
+#nav_menu {
+    border-bottom: 3px solid blue;
+    margin-bottom: 20px;
+}
 a:hover, a:focus {
     font-style:italic;
     color:darkseagreen;
