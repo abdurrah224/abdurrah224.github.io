@@ -17,29 +17,22 @@ body {
     background-attachment: fixed;
     background-color: white;
 }
-#nav_menu {
-    overflow: auto;
-    border-bottom: 3px solid blue;
-}
 #nav_menu ul { 
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 #nav_menu ul li {
     float: left;
 }
 #nav_menu ul li a {
-    display: block;
-    width: 200px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    background: linear-gradient(to right, #2a00ff, #6a00ff);
-    border-right: 2px solid rgba(255,255,255,0.4);
+text-align: center;
+display: block;
+width: 175px;
+padding: 1em 0; 
+text-decoration: none;
+background-color: blue;
+color: white;
+font-weight: bold;
+border-right: 2px solid white;
 }
 #nav_menu ul li a.lastitem { 
     border-right: none;
@@ -47,8 +40,8 @@ body {
 #nav_menu ul li a.current { 
     color: yellow;
 }
-#nav_menu ul li a:hover {
-    background: #1a00cc;
+#nav_menu {
+    overflow:auto;
 }
 a:hover, a:focus {
     font-style:italic;
