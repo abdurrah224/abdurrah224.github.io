@@ -23,6 +23,10 @@ body {
 #nav_menu ul li {
     float: left;
 }
+#nav_menu {
+    overflow: auto;
+    border-bottom: 3px solid blue;
+}
 #nav_menu ul li a {
 text-align: center;
 display: block;
