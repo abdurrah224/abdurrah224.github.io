@@ -1,7 +1,6 @@
 html{
     background-image:  linear-gradient(to left, white 0%, #8cdfd1 100%)
 }
-
 body {
     font-family:Arial, Helvetica, sans-serif;
     font-size:100%;
@@ -18,6 +17,27 @@ body {
     background-attachment: fixed;
     background-color: white;
 
+}
+nav {
+    text-align: center;
+    background: linear-gradient(to right, #2a00ff, #6a00ff);
+    border-bottom: 3px solid blue;
+}
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 15px 40px;
+
+    border-right: 2px solid rgba(255,255,255,0.4);
+}
+nav a:last-child {
+    border-right: none;
+}
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
 }
 a:hover, a:focus {
     font-style:italic;
