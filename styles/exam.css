@@ -24,6 +24,7 @@ a:hover, a:focus {
     color:darkseagreen;
     border: 3px blue;
     border-style: dotted solid;
+    border-width:95%
 }
 header{
     margin-bottom: 3em;
@@ -47,13 +48,14 @@ header img {
     text-shadow: 2px 2px 2px rgb(128, 0, 0);
 }
 article {
-    clear:left;
+    clear: left;
     width: 70%;
     float: left;
-    column-count: 2;
-    column-rule: 2px dotted maroon;
+    column-count: 3;
+    column-rule: 3px dashed blue;
     column-gap: 2em;
     margin-left: 2em;
+    border-right: 3px solid blue;
 }
 article h3 {
     column-span: all;
@@ -71,19 +73,28 @@ article p::first-letter {
 }
 aside {
     width: 20%;
-    float: right;
+    position: fixed;
+    right: 3%;
+    top: 120px;
     background-color: #ffebc6;
     padding: 1em;
+    border: 2px solid blue;
 }
 p.fixed {
     width: auto;
-    position: fixed;
     bottom: 135px;
     right: 20px;
     background-color: lightgreen;
     border: 2px solid darkgreen;
     padding: 10px 20px;
     font-weight: bold;
+}
+aside ul {
+    list-style-type: square;
+}
+
+aside ul ul {
+    list-style-type: circle;
 }
 footer {
     clear: both;
