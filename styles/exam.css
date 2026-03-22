@@ -20,14 +20,14 @@ body {
 }
 nav {
     text-align: center;
-    background: linear-gradient(to right, #2a00ff, #6a00ff);
+    background: linear-gradient(to right, #8579be, #452a6b);
     border-bottom: 3px solid blue;
 }
 nav a {
     display: inline-block;
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bold; 
 
     padding: 15px 40px;
 
