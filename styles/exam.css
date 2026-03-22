@@ -75,6 +75,10 @@ header img {
 .shadow {
     text-shadow: 2px 2px 2px rgb(128, 0, 0);
 }
+article h1 {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
 article {
     clear: left;
     width: 70%;
