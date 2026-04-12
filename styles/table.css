@@ -38,8 +38,9 @@ border-top: 3px solid rgb(255, 179, 97);
 }
 table.third caption {
     background-color: rgb(119, 233, 119);
+    border-top: 3px solid rgb(255, 179, 97);
+    font-weight: bold;
 }
-]
 table.third th, table.second td {
 padding: 0.7em;
 }
