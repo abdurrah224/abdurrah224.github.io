@@ -32,3 +32,34 @@ border: 2px solid purple;
 table.second thead tr:first-child{
 border-bottom: 2px solid purple;
 }
+
+table.third {
+width: 100%;
+border-collapse: collapse;
+border: 2px solid #f46b45;
+margin: 1rem 0;
+}
+table.third caption {
+caption-side: top;
+text-transform: uppercase;
+font-weight: bold;
+background-color: #d8f9c7;
+padding: 0.6em;
+margin-bottom: 0.4em;
+border: 2px solid #f46b45;
+border-bottom: none;
+}
+table.third th,
+table.third td {
+border: 1px solid #f46b45;
+padding: 0.8em 0.9em;
+}
+table.third thead th {
+background-color: #d8f9c7;
+}
+table.third tbody tr:nth-child(even) td {
+background-color: #faf7f3;
+}
+table.third td:first-child {
+text-align: center;
+}
