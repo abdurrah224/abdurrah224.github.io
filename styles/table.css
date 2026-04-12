@@ -34,11 +34,11 @@ border-bottom: 2px solid purple;
 }
 table.third {
 border-collapse: collapse;
-border-top: 3px solid rgb(255, 179, 97);
+border-top: 2px solid rgb(255, 179, 97);
 }
 table.third caption {
     background-color: rgb(119, 233, 119);
-    border-top: 3px solid rgb(255, 179, 97);
+    border-top: 2px solid rgb(255, 179, 97);
     font-weight: bold;
 }
 table.third th, table.second td {
@@ -47,17 +47,17 @@ padding: 0.7em;
 table.third th {
 background-color: rgb(119, 233, 119);
 padding: 0.7em;
-border-bottom: 3px solid rgb(255, 179, 97);
-border-top: 3px solid rgb(255, 179, 97);
+border-bottom: 2px solid rgb(255, 179, 97);
+border-top: 2px solid rgb(255, 179, 97);
 }
 table.third thead tr:first-child {
-border-bottom: 3px solid rgb(255, 179, 97);
+border-bottom: 2px solid rgb(255, 179, 97);
 }
 table.third thead tr:last-child {
-border-bottom: 3px solid rgb(255, 179, 97);
+border-bottom: 2px solid rgb(255, 179, 97);
 }
 table.third tbody tr:last-child {
-border-bottom: 3px solid rgb(255, 179, 97);
+border-bottom: 2px solid rgb(255, 179, 97);
 }
 @media only screen and (max-width: 425px) {
 th, td {
