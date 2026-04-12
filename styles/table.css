@@ -41,8 +41,9 @@ table.third caption {
     border-top: 2px solid rgb(255, 179, 97);
     font-weight: bold;
 }
-table.third th, table.second td {
+table.third th, table.third td {
 padding: 0.7em;
+vertical-align: top;
 }
 table.third th {
 background-color: rgb(119, 233, 119);
